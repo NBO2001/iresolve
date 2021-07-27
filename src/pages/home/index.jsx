@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { setQuestion } from '../../redux/modules/questions';
 
-import { ProblemHeard } from '../../components';
+import { ProblemHeard, ProblemOptions } from '../../components';
 
 import { Wrapper } from './style';
 
@@ -38,9 +38,8 @@ function Home() {
 
     return (
         <Wrapper>
-            <ProblemHeard>
-                
-            </ProblemHeard>
+            <ProblemHeard />
+            <ProblemOptions />
         </Wrapper>
     )
 }
