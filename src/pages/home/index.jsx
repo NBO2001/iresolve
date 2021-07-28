@@ -14,8 +14,18 @@ function Home() {
 
     const dispatch = useDispatch();
 
+    const novaQuest = async () => {
+        await api.get('/question').then( async function (res) {
+            if(isMount){
+                const { data } = res;
+                await dispatch(setQuestion(data));
+            }
+        }).catch( function (err) {
+                
+        })
+    }
+
     useEffect(() => {
-        
         const findQuestion = async () => {
             await api.get('/question').then( async function (res) {
                 if(isMount){
@@ -26,22 +36,18 @@ function Home() {
                     
             })
         }
-
         findQuestion()
-
         return (
             isMount.current = false
         )
-
     },[dispatch]);
-
 
     return (
         <Wrapper>
             <ProblemHeard />
             <ProblemOptions />
+            <button onClick={() => novaQuest()}>New Question</button>
         </Wrapper>
     )
 }
-
-export default Home
+export default Home;

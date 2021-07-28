@@ -24,3 +24,11 @@ export const ButtonOptions = styled.button`
     font-size: 1.2em;
     min-height: 40px;
 `;
+
+export const ButtonOptionsErr = styled(ButtonOptions)`
+    color: red;
+`;
+
+export const ButtonOptionsAcc = styled(ButtonOptions)`
+    color: green;
+`;
