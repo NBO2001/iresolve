@@ -1,9 +1,4 @@
-import styled from 'styled-components';
-import { ButtonOp } from '../ButtonOptions';
-
-export const ButtonOpErr = styled(ButtonOp)`
-    color: red;
-`;
+import { ButtonOpErr } from './style';
 
 const ButtonOptionsErr = ({ onClick,children }) => {
     return(

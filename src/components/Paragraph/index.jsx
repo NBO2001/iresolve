@@ -1,9 +1,4 @@
-import styled from "styled-components";
-
-export const Parag = styled.p`
-    line-height: 25px;
-    margin-right: 0.2rem;
-`;
+import { Parag } from './style';
 
 const Paragraph = ({ children }) => {
     return(

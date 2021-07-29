@@ -9,8 +9,9 @@ export const ProOptions = styled.div`
     height: 50vh;
 `;
 
-
 export const DivHeard = styled.div`
+    padding: 0.2rem;
+    font-family: ${(props) => props.theme.fonts.fontButton};
 `;
 
 

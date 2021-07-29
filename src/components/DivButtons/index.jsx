@@ -1,16 +1,10 @@
-import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { ButtonOptions, ButtonOptionsErr, ButtonOptionsAcc } from '../index';
 import { setButton } from '../../redux/modules/buttons';
+import { DivButton } from './styled';
 
 
-export const DivButton = styled.div`
-display: flex;
-flex-direction: column;
-margin-top: 0.3rem;
-width: 80%;
-`;
 
 const DivButtons = () => {
     const { question } = useSelector((state) => state.questions);

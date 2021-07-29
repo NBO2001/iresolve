@@ -6,10 +6,13 @@ export const Conteinner = styled.div`
     align-items: center;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 40vh;
+    max-height: 35vh;
     margin-top: 0.3rem;
     margin-left: 0.3rem;
+    margin-bottom: 0.2rem;
     width: 95%;
     text-align: justify;
     padding: 0.3rem;
+    font-size: 0.9em;
+    font-family: ${(props) => props.theme.fonts.fontPrimary}
 `;

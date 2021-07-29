@@ -1,11 +1,4 @@
-import styled from 'styled-components';
-import { ButtonOp } from '../ButtonOptions';
-
-
-export const ButtonOpAcc = styled(ButtonOp)`
-    color: green;
-`;
-
+import { ButtonOpAcc } from './style';
 
 const ButtonOptionsAcc = ({ onClick,children }) => {
     return(

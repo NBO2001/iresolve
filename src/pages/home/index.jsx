@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { setQuestion } from '../../redux/modules/questions';
 
-import { ProblemHeard, ProblemOptions } from '../../components';
+import { ProblemHeard, ProblemOptions, ButtonOptions } from '../../components';
 
 import { Wrapper } from './style';
 
@@ -46,7 +46,7 @@ function Home() {
         <Wrapper>
             <ProblemHeard />
             <ProblemOptions />
-            <button onClick={() => novaQuest()}>New Question</button>
+            <ButtonOptions onClick={() => novaQuest()}>New Question</ButtonOptions>
         </Wrapper>
     )
 }

@@ -1,13 +1,15 @@
 const theme = {
     colors:  {
-        primary: '#0583F2',
-        background: '#262626',
-        text: '#0D0D0D',
-        success: '#04ADBF',
-        buttuns: "#0597F2",
-        buttonBackgroud: '#262626',
-        deep: '#0D0D0D',
+        background: '#FDFAEF',
+        button: '#1893F5',
+        error: '#F50801',
+        right: '#02F009',
+        textWhite: '#FDFAEF',
     },
+    fonts: {
+        fontPrimary: "'Kanit', sans-serif",
+        fontButton: "'Poppins', sans-serif",
+    }
 }
 
 export default theme;
