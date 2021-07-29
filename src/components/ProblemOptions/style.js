@@ -9,26 +9,8 @@ export const ProOptions = styled.div`
     height: 50vh;
 `;
 
-export const DivButtons = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.3rem;
-    width: 80%;
-`;
 
 export const DivHeard = styled.div`
 `;
 
-export const ButtonOptions = styled.button`
-    margin-top: 0.5rem;
-    font-size: 1.2em;
-    min-height: 40px;
-`;
 
-export const ButtonOptionsErr = styled(ButtonOptions)`
-    color: red;
-`;
-
-export const ButtonOptionsAcc = styled(ButtonOptions)`
-    color: green;
-`;
