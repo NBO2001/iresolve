@@ -7,3 +7,4 @@ export { default as DivButtons } from './DivButtons';
 export { default as ButtonOptions} from './ButtonOptions';
 export { default as ButtonOptionsAcc} from './ButtonOptionsAcc';
 export { default as ButtonOptionsErr} from './ButtonOptionsErr';
+export { default as Loader } from './Loader';

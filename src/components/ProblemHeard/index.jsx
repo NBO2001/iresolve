@@ -1,24 +1,14 @@
 import { Conteinner } from './style';
-import { useState, useEffect } from 'react'
 import {  useSelector } from "react-redux";
-import { Imagen, Paragraph } from '../index';
+import { Imagen, Paragraph, Loader } from '../index';
 
 const ProblemHeard = () => {
     const  {question}  = useSelector((state) => state.questions);
-
-    const [ problem, setProblem ] = useState({})
     
-    useEffect(() => {
-        if(question){
-            setProblem(question[0].problem);
-        }
-    },[question])
- 
-
     const retHeard = () => {
-        if(problem){
-            const content = problem.partOne;
-            const img = problem.partTwo;
+        if(question){
+            const content = question[0].problem.partOne;
+            const img = question[0].problem.partTwo;
              return (
                <>
                    <Paragraph>{ content }</Paragraph>
@@ -27,12 +17,11 @@ const ProblemHeard = () => {
                </>
             )
         }
-       
     }
 
     return(
         <Conteinner>
-            {retHeard()}
+            {question? retHeard(): <Loader />}
         </Conteinner>
     )
 }

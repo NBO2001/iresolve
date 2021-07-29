@@ -1,27 +1,21 @@
 import { ProOptions, DivHeard} from './style';
 import { useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
-import { Paragraph, DivButtons  } from '../index';
-
+import { Paragraph, DivButtons, Skeleton  } from '../index';
 
 const ProblemOptions = () => {
     
     const { question } = useSelector((state) => state.questions);
 
-    const [ qst, setQst ] = useState({});
- 
-    useEffect(() => {
-        if(question){
-            setQst(question[0].qsts)
-        }
-    }, [question, qst])
+    const probHeard = () => {
+        return (question[0].qsts.heard.split('</NBO>')).map((item, idx) => {
+            return (<Paragraph key={"Opt" + idx}>{item}</Paragraph>);
+        })
+    }
 
     return (
         <ProOptions>
             <DivHeard>
-            {qst['heard'] && (qst['heard'].split('</NBO>')).map((item, idx) => {
-                        return (<Paragraph key={"Opt" + idx}>{item}</Paragraph>);
-                    })}
+            {question ? probHeard(): <Skeleton height={'50px'} width={'95vw'} />}
             </DivHeard>
             
             <DivButtons />

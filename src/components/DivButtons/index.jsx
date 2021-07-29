@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { ButtonOptions, ButtonOptionsErr, ButtonOptionsAcc } from '../index';
+import { ButtonOptions, ButtonOptionsErr, ButtonOptionsAcc, Skeleton } from '../index';
 import { setButton } from '../../redux/modules/buttons';
 import { DivButton } from './styled';
 
@@ -65,7 +65,7 @@ const DivButtons = () => {
 
     return(
         <DivButton>
-            {buttonVal && renderButtons()}
+            {buttonVal? renderButtons(): <Skeleton height={'50px'} width={'85vw'}/>}
         </DivButton>
     )
 }   

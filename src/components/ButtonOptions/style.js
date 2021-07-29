@@ -9,6 +9,7 @@ export const ButtonOp = styled.button`
     cursor: pointer;
     border: 1.8px solid ${(props) => props.theme.colors.button};
     min-height: 40px;
+    padding: 0.3rem;
     animation: 3s all ease;
     &:hover{
         color: ${(props) => props.theme.colors.textWhite};
