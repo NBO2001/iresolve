@@ -10,7 +10,7 @@ export const Conteinner = styled.div`
     margin-top: 0.3rem;
     margin-left: 0.3rem;
     margin-bottom: 0.2rem;
-    width: 95%;
+    width: 95vw;
     text-align: justify;
     padding: 0.3rem;
     font-size: 0.9em;

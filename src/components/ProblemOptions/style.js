@@ -7,6 +7,7 @@ export const ProOptions = styled.div`
     align-items: center;
     overflow-y: auto;
     height: 50vh;
+    width: 95vw;
 `;
 
 export const DivHeard = styled.div`

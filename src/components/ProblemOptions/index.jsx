@@ -15,7 +15,7 @@ const ProblemOptions = () => {
     return (
         <ProOptions>
             <DivHeard>
-            {question ? probHeard(): <Skeleton height={'50px'} width={'95vw'} />}
+            {question ? probHeard(): <Skeleton height={'50px'} width={'90vw'} />}
             </DivHeard>
             
             <DivButtons />
