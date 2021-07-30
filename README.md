@@ -10,7 +10,7 @@ O intuito não é ser um simulado, mas uma fonte de estudo passiva.
 Utilizei questões de química de adições anteriores do vestibular para o qual pretendo prestar, além de algumas originais.
 
 &nbsp;
-O objetivo é tentar acertar, mas igualmente valorizar o erro, a aplicação não dá a resposta, de tal forma obriga o usuário a pensar em outra alternativa, usei um vermelho bem chamativo justamente para ficar bem gravado o erro e assim não comete-lo novamente. 
+O objetivo é tentar acertar, mas igualmente valorizar o erro, a aplicação não dá a resposta, de tal forma obriga o usuário a pensar em outra alternativa, usei um vermelho bem chamativo justamente para ficar bem gravado o erro e assim não cometê-lo novamente. 
 
 &nbsp;
 A aplicação consome dados da uma api criada anteriormente criada por mim.
