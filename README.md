@@ -13,7 +13,10 @@ Utilizei questões de química de adições anteriores do vestibular para o qual
 O objetivo é tentar acertar, mas igualmente valorizar o erro, a aplicação não dá a resposta, de tal forma obriga o usuário a pensar em outra alternativa, usei um vermelho bem chamativo justamente para ficar bem gravado o erro e assim não comete-lo novamente. 
 
 &nbsp;
-A aplicação consome dados da uma api criada anteriormente criada por mim. 
+A aplicação consome dados da uma api criada anteriormente criada por mim.
+
+&nbsp;
+O projeto foi publicado no [Netlify](https://iresolve.netlify.app), fique a vontade para ver! :smirk:
 
 ## Desenvolvimento
 Tentei ao longo do desenvolvito deixar a aplicação mais modular possível.
